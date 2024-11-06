@@ -1,0 +1,50 @@
+# www.trikaalastrology.com robots.txt
+
+# Allow all web crawlers
+User-agent: *
+Allow: /
+Allow: /#services
+Allow: /#about
+Allow: /#contact
+
+# Sitemap location
+Sitemap: https://www.trikaalastrology.com/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 10
+
+# Disallow access to specific directories
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /backup/
+Disallow: /css/
+Disallow: /js/
+Disallow: /video/
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 10
+
+# Block specific bots known for aggressive crawling
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Media files
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
